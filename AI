@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Snake Game</title>
+        <style>
+            .body {
+                background-color: tan;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+            .head {
+                background-color: yellow;
+                width: 4%;
+                height: 4%
+            }
+            .body1 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body2 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body3 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body4 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body5 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body6 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body7 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body8 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body9 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .body10 {
+                background-color: blue;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            
+        </style>
+    </head>
+    <body class="body">
+        <div class="head" id="head"></div>
+        <div class="body1"></div>
+        <div class="body2"></div>
+        <div class="body3"></div>
+        <div class="body4"></div>
+        <div class="body5"></div>
+        <div class="body6"></div>
+        <div class="body7"></div>
+        <div class="body8"></div>
+        <div class="body9"></div>
+        <div class="body10"></div>
+        <div class="food"></div>
+        <div class="death"></div>
+        <script>
+            const head = document.getElementById('head')
+            const body1 = document.getElementByClassName('body1')
+            var wh = document.innerHeight;
+            var ww = document.innerWidth;
+            function sleep(ms) { 
+                return new Promise(resolve => setTimeout(resolve, ms)); 
+            }
+            var alive = true
+            async function start() {
+                while(alive === true) {
+                    sleep(1)
+                }
+            }
+            var rect1 = head.getBoundingClientRect(); 
+            var rect2 = wall.getBoundingClientRect(); 
+            var horizontalTouch = rect1.right >= rect2.left && rect1.left <= rect2.right; 
+            var verticalTouch = rect1.bottom >= rect2.top && rect1.top <= rect2.bottom; 
+            if (horizontalTouch && verticalTouch) { 
+            
+            }
+            else { 
+            
+            } 
+        </script>
+    </body>
+</html>
